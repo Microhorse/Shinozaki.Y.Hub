@@ -1,23 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja"> 
   <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-223840948-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223840948-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-223840948-1');
-</script>
-    <link rel="Myhomepage" href="Myhomepage.css">
+    gtag('config', 'UA-223840948-1');
+    </script>
     <meta charset="utf-8">
-    <title>Progate</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/android-chrome-192×192.png">
+    
+    <title>ShinozakiHUB</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
   </head>
+
+  <!-- body -->
   <meta name="google-site-verification" content="kSdBAAzjXprORDZt8tSg4FpW-CDdHX1KmPd6i83y1g0" />
   <body>
-    <h1 class="title">ShinozakiHUB</h1>
+    <header>
+      <h1 class="title">ShinozakiHUB</h1>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">home</a> </li>
+        <li><a href="#">profile</a></li>
+        <li><a href="#">projects</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="sns-links">
+        <button class="btn-sns" onclick="window.open('https://discordapp.com/users/402030505941532673')">
+            <svg class="icon-sns" width="65.96" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#icon-discord)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M55.87,4.19c-4.34-1.99-8.91-3.39-13.61-4.19-.64,1.15-1.23,2.33-1.74,3.54-5.01-.75-10.1-.75-15.1,0-.52-1.21-1.1-2.39-1.74-3.54-4.7,.8-9.28,2.21-13.62,4.2C1.45,16.94-.89,29.37,.28,41.62H.28c5.04,3.73,10.69,6.56,16.69,8.38,1.35-1.82,2.55-3.75,3.58-5.76-1.95-.73-3.84-1.63-5.63-2.69,.47-.34,.93-.7,1.38-1.04,10.57,4.97,22.81,4.97,33.37,0,.45,.37,.91,.72,1.38,1.04-1.8,1.06-3.68,1.96-5.64,2.69,1.03,2.02,2.22,3.94,3.58,5.76,6.01-1.81,11.66-4.64,16.7-8.37h0c1.35-14.21-2.36-26.53-9.82-37.44ZM22.01,34.09c-3.25,0-5.94-2.95-5.94-6.58s2.59-6.61,5.93-6.61,6,2.98,5.95,6.61-2.63,6.58-5.94,6.58Zm21.92,0c-3.26,0-5.94-2.95-5.94-6.58s2.59-6.61,5.94-6.61,5.99,2.98,5.93,6.61c-.06,3.62-2.62,6.58-5.93,6.58Z" fill="#fff"/>
+                </g>
+                <defs>
+                    <clipPath id="icon-discord">
+                        <path fill="#fff" d="M0 0h70v70H0z"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+        <button class="btn-sns" onclick="window.open('https://instagram.com/__shinozaki__')">
+            <svg class="icon-sns" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#icon-instagram)">
+                  <path d="M25,4.5c6.68,0,7.47,.03,10.1,.15,2.44,.11,3.76,.52,4.64,.86,1.17,.45,2,1,2.87,1.87s1.42,1.71,1.87,2.87c.34,.88,.75,2.2,.86,4.64,.12,2.64,.15,3.43,.15,10.1s-.03,7.47-.15,10.1c-.11,2.44-.52,3.76-.86,4.64-.45,1.17-1,2-1.87,2.87s-1.71,1.42-2.87,1.87c-.88,.34-2.2,.75-4.64,.86-2.64,.12-3.43,.15-10.1,.15s-7.47-.03-10.1-.15c-2.44-.11-3.76-.52-4.64-.86-1.17-.45-2-1-2.87-1.87s-1.42-1.71-1.87-2.87c-.34-.88-.75-2.2-.86-4.64-.12-2.64-.15-3.43-.15-10.1s.03-7.47,.15-10.1c.11-2.44,.52-3.76,.86-4.64,.45-1.17,1-2,1.87-2.87s1.71-1.42,2.87-1.87c.88-.34,2.2-.75,4.64-.86,2.63-.12,3.42-.15,10.1-.15m0-4.5c-6.79,0-7.64,.03-10.31,.15-2.66,.12-4.48,.54-6.07,1.16-1.64,.64-3.04,1.49-4.43,2.88-1.39,1.39-2.24,2.78-2.88,4.43-.62,1.59-1.04,3.41-1.16,6.07-.12,2.67-.15,3.52-.15,10.31s.03,7.64,.15,10.31c.12,2.66,.54,4.48,1.16,6.07,.64,1.64,1.49,3.04,2.88,4.43s2.78,2.24,4.43,2.88c1.59,.62,3.41,1.04,6.07,1.16,2.66,.12,3.52,.15,10.31,.15s7.64-.03,10.31-.15c2.66-.12,4.48-.54,6.07-1.16,1.64-.64,3.04-1.49,4.43-2.88s2.24-2.78,2.88-4.43c.62-1.59,1.04-3.41,1.16-6.07,.12-2.67,.15-3.52,.15-10.31s-.03-7.64-.15-10.31c-.12-2.66-.54-4.48-1.16-6.07-.65-1.64-1.5-3.03-2.89-4.42-1.39-1.39-2.78-2.24-4.43-2.88-1.59-.62-3.41-1.04-6.07-1.16-2.66-.13-3.52-.16-10.3-.16h0Z" fill="#fff"/>
+                  <path d="M25,12.16c-7.09,0-12.84,5.75-12.84,12.84s5.75,12.84,12.84,12.84,12.83-5.75,12.83-12.84-5.74-12.84-12.83-12.84Zm0,21.17c-4.6,0-8.33-3.73-8.33-8.33s3.73-8.33,8.33-8.33,8.33,3.73,8.33,8.33c0,4.6-3.73,8.33-8.33,8.33Z"fill="#fff"/>
+                  <circle cx="38.34" cy="11.65" r="3" fill="#fff"/>
+                </g>
+                </svg>
+                <defs>
+                    <clipPath id="icon-instagram">
+                        <path fill="#fff" d="M0 0h70v70H0z"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+        <button class="btn-sns" onclick="window.open('https://www.facebook.com/profile.php?id=100025416870832')">
+            <svg class="icon-sns" width="50.31" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#icon-facebook)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M50.31,25.15C50.31,11.26,39.04,0,25.15,0S0,11.26,0,25.15c0,12.56,9.2,22.96,21.22,24.85v-17.58h-6.39v-7.27h6.39v-5.54c0-6.3,3.76-9.79,9.5-9.79,2.75,0,5.63,.49,5.63,.49v6.19h-3.17c-3.12,0-4.1,1.94-4.1,3.93v4.72h6.98l-1.12,7.27h-5.86v17.58c12.03-1.89,21.23-12.29,21.23-24.85Z" fill="#fff"/>
+                </g> 
+                <defs>
+                    <clipPath id="icon-facebook">
+                        <path fill="#fff" d="M0 0h70v70H0z"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+    </div>
+    <section class="projects-section">
+      <h2 class="section-title">projects</h2>
+    </section>
+    <section class="profile-section"> 
+      <h2 class="section-title">profile</h2>
+    </section>
+    <section class="contact">
+      <h2 class="section-title">contact</h2>
+    </section>
+    <footer>
+      <p>ShinozakiHUB</p>
+    </footer>
   </body>
-　<body>
-    <a href="MyProjects/UrbanBoardingHUB.html" >UrbanBoardingHub</a>
+
 </html>
