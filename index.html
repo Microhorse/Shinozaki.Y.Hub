@@ -12,10 +12,14 @@
     </script>
     <meta charset="utf-8">
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/android-chrome-192×192.png">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192×192.png">
     
     <title>ShinozakiHUB</title>
     
@@ -82,6 +86,20 @@
     </div>
     <section class="projects-section">
       <h2 class="section-title">projects</h2>
+      <!-- スライダーのコンテナ -->
+      <div class="swiper">
+        <!-- 必要に応じたwrapper -->
+        <div class="swiper-wrapper">
+          <!-- スライド -->
+          <div class="swiper-slide"><img src="img/UrbanBoardingHUB.jpg"></div>
+          <div class="swiper-slide">coming soon</div>
+          <div class="swiper-slide">coming soon</div>
+        </div>
+        <div class="swiper-nav-wrapper"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>      
     </section>
     <section class="profile-section"> 
       <h2 class="section-title">profile</h2>
@@ -92,6 +110,7 @@
     <footer>
       <p>ShinozakiHUB</p>
     </footer>
+    <script type="text/javascript" src="src/swiper.jsx"></script>
   </body>
 
 </html>
