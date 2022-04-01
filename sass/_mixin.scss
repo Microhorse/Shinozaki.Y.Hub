@@ -1,0 +1,21 @@
+@mixin for-size($range) {
+  $small-device: 600px;
+  $large-device: 1025px;
+ 
+  @if $range == phone {
+    @media (max-width: #{$small-device - 1}) { @content; }
+  } @else if $range == tablet {
+    @media (min-width: $small-device) { @content; }
+  } @else if $range == pc {
+    @media (min-width: $large-device) { @content; }
+  }
+}
+ 
+// usage
+.my-box {
+  padding: 10px;
+  
+  @include for-size(pc) {
+    padding: 20px;
+  }
+}

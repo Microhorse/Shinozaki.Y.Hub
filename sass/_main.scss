@@ -1,0 +1,5 @@
+// 通常のWebデザインを構築していくファイルになります。
+// responsive main　メディアクエリをネストで記述していくのであれば、ファイルを分割する必要はなく、style.scssに記述していけばOK
+@use "config/variables" as v;
+@use "mixin" as m;
+
